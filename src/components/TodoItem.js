@@ -3,6 +3,7 @@ import './components.css';
 
 function TodoItem(props) {
   const classText = `${ props.completed && "todo-ready"}`;
+
   const onComplete = () => {
     console.log('Todo completado: ', props.texto );
   };

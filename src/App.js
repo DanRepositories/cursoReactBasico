@@ -16,10 +16,10 @@ const completedTodo = todoList.reduce((total, todo) => (true === todo.completed 
 function App() {
   return (
     <React.Fragment>
-      <TodoHeader completedCount={ completedTodo } totalCount={ todoList.length }></TodoHeader>
+      <TodoHeader completedCount={ completedTodo } totalCount={ todoList.length } />
       <div id='header-container'>
-        <TodoSearch></TodoSearch>
-        <TodoAddButton></TodoAddButton>
+        <TodoSearch />
+        <TodoAddButton />
       </div>
       <TodoList list={ todoList }></TodoList>
     </React.Fragment>
